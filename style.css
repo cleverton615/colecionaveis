@@ -7,6 +7,8 @@
 
 .geral {
   background-image: url(imagens/cartas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .max-width {
@@ -14,19 +16,13 @@
   max-width: 120rem;
   padding: 0 4rem;
   margin: 0 auto;
-  margin-bottom: 26rem;
+  margin-bottom: 10rem;
 }
 
 .navbar {
-  margin-bottom: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 10;
   padding: 3rem 4rem 1rem;
   display: flex;
-  justify-content: space-between;
 }
 
 .navbar li {
@@ -35,8 +31,8 @@
 
 .navbar a {
   padding: 1rem;
-  display: inline-block;
   color: white;
+  text-align: right;
 }
 
 .navbar a:hover {
@@ -45,21 +41,13 @@
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
-  scroll-margin-top: 20rem;
-}
-
-header .header {
-  max-width: 62rem;
-  flex: 1;
+  margin: 0;
 }
 
 header .header h1 {
   font-weight: bold;
   color: white;
-  margin-top: 18rem;
+  font-size: 3rem;
 }
 
 header .header p {
@@ -67,9 +55,58 @@ header .header p {
   margin-top: 1rem;
   margin-bottom: 4rem;
   max-width: 50rem;
+  font-size: 1rem;
 }
 
 header .header h2 {
   color: white;
   text-align: center;
+  margin: 20px 700px 20px
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  color: red;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.colecionaveis .itens {
+  text-align: center;
+  margin: 0 auto 6rem;
+}
+
+.colecionaveis .itens h2 {
+  font-size: 3rem;
+}
+
+.colecionaveis .itens p { 
+  font-size: 1.5rem;
+}
+
+.colecionaveis ul li {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.colecionaveis ul li .imagem {
+  width: 100%;
+  min-width: 40rem;
+  max-width: 47rem;
+  height: auto;
+}
+
+.colecionaveis ul li .itens_info {
+  max-width: 200rem;
+  text-align: left;
+}
+
+.colecionaveis ul li .itens_info h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
 }
